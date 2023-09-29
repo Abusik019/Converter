@@ -1,8 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input {
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .currency_converter {
   width: 400px;
-  height: 350px;
+  height: -moz-fit-content;
+  height: fit-content;
   background-color: white;
   border-radius: 15px;
   margin: 80px auto 0 auto;
@@ -85,6 +102,59 @@ select:active, select:focus, input:active, input:focus {
   border: none;
   outline: none;
   border: transparent;
+}
+
+.slider {
+  width: 1800px;
+  height: 700px;
+  margin: 0 auto;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.slider > button {
+  width: 50px;
+  height: 50px;
+  background-color: #000000;
+  color: white;
+  font-size: 35px;
+  border: none;
+  border-radius: 30px;
+}
+.slider > button.inactive {
+  pointer-events: none;
+  opacity: 0;
+}
+.slider > .middle_image > h1, .slider > .middle_image h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Nunito", sans-serif;
+  line-height: 16px;
+}
+.slider > .middle_image > img {
+  width: 800px;
+  height: 500px;
+}
+.slider > img {
+  width: 20%;
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input {
+  text-align: left;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 body {

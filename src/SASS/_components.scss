@@ -1,7 +1,7 @@
 @import './_core';
 
 .currency_converter {
-    @include size(400px, 350px);
+    @include size(400px, fit-content);
     background-color: white;
     border-radius: 15px;
     margin: 80px auto 0 auto;
@@ -39,9 +39,7 @@
                 border: none;
                 color: #5282a1;
                 padding-top: 20px;
-
                 display: block;
-                // width: 100%;
 
                 &::-webkit-input-placeholder {
                     color:#5282a1;
@@ -77,3 +75,5 @@ select:active, select:focus, input:active, input:focus{
     outline:none;
     border:transparent;  
 }
+
+
